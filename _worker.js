@@ -101,6 +101,8 @@ export default {
                 }
             } else if (url.pathname.startsWith("/login")) {
                 url.pathname = "";
+            } else if (url.pathname.startsWith("/signup")) {
+                url.pathname = "";
             }
         }
         return fetch(new Request(url, request));
