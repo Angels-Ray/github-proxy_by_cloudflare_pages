@@ -99,6 +99,8 @@ export default {
                         url = new URL(location);
                     }
                 }
+            } else if (url.pathname.startsWith("/login")) {
+                url.pathname = "";
             }
         }
         return fetch(new Request(url, request));
