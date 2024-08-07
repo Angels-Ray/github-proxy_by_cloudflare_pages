@@ -3,8 +3,6 @@
 
 通过Cloudflare Pages反代github资源。仅支持public的资源。
 
-已搭建好的：[https://github-6lp.pages.dev/](https://github-6lp.pages.dev/)
-
 # 安装教程
 
 1. 首先，注册Cloudflare。
@@ -18,7 +16,7 @@
 
 使用`{反代域名}/{需要代理的地址}`即可。
 
-注：仅支持public的资源。
+注：仅支持public的资源。默认禁止直接访问`https://反代域名/`，防止cloudflare的风险提示。
 
 例：
 

@@ -101,10 +101,16 @@ export default {
                 }
             } else if (url.pathname.startsWith("/login")) {
                 url.pathname = "";
-                return;
+                return; // 禁止访问login
             } else if (url.pathname.startsWith("/signup")) {
                 url.pathname = "";
-                return;
+                return; // 禁止访问signup
+            } else if (url.pathname == "/") {
+                url.pathname = "";
+                return; // 禁止直接访问
+            } else if (url.pathname == "") {
+                url.pathname = "";
+                return; // 禁止直接访问
             }
         }
         return fetch(new Request(url, request));
